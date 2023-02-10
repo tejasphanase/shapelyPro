@@ -1,0 +1,31 @@
+<div class="portfolio-name-section">
+    <h1>Portfolio</h1>
+    <button routerLink="/shapely/video">go to video</button>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="project-section" >
+                <div class="project-image-section" *ngFor="let item of projectData ">
+                   <a routerLink="/shapely/project-details/{{item.id}}"> <img src="{{item.image}}" alt="image"></a>
+                    <h2>{{item.projecttitleno}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="footer-section">
+            <h1 class="col-md-8">Theme by Colorlib Powered by WordPress</h1>
+            <div class="col-md-4 socialMedia-icons">
+                <a href="https://www.facebook.com/"><p><mat-icon>facebook</mat-icon></p></a>
+                <a href="https://www.Google.com"><p><mat-icon>Google</mat-icon></p></a>
+                <p><mat-icon>linkedin-box</mat-icon></p>
+                <p><mat-icon>subscriptions</mat-icon></p>
+                <p><mat-icon>facebook</mat-icon></p>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,148 @@
+<div class="main">
+    <div class="project-name">
+        <h1>{{projectDetail.projecttitleno}}</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 ">
+            <img src="{{projectDetail.image}}" width="100%" alt="">
+            <div class="projectName">
+                <h1>{{projectDetail.projecttitleno}}</h1>
+            </div>
+            <div class="date">
+                {{projectDetail.createddate}}
+            </div>
+            <div class="discription">
+                <p>
+                    {{projectDetail.description}}
+                </p>
+            </div>
+            <div class="relatedProject-section">
+                <h1>Related Project</h1>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="related-project-images">
+                                <img src="https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/12/photo-1443890484047-5eaa67d1d630-1.jpg"
+                                    height="200px" width="100px" class="d-block w-100" alt="...">
+                                <img src="https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1422568374078-27d3842ba676-1.jpg"
+                                    height="200px" width="100px" class="d-block w-100" alt="...">
+                                <img src="https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/12/photo-1447877085163-3cce903855cd-1.jpg"
+                                    height="200px" width="100px" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="related-project-images">
+                                <img src="https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/12/photo-1440557653082-e8e186733eeb-1.jpg"
+                                    height="200px" width="100px" class="d-block w-100" alt="...">
+                                <img src="https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1448518184296-a22facb4446f-1-1.jpg,"
+                                    height="200px" width="100px" class="d-block w-100" alt="...">
+                                <img src="https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1430329429612-babb42f88673-1-1.jpg"
+                                    height="200px" width="100px" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="related-project-images">
+                                <img src="https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1447958374760-1ce70cf11ee3-1-1.jpg"
+                                    height="200px" width="100px" class="d-block w-100" alt="...">
+                                <img src="https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1449168013943-3a15804bb41c-1-1.jpg"
+                                    height="200px" width="100px" class="d-block w-100" alt="...">
+                                <img src="https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1449057528837-7ca097b3520c-1-1.jpg"
+                                    height="200px" width="100px" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leaveText">
+                <h1>Leave a Reply</h1>
+                <p>Your email address will not be published. Required fields are marked *</p>
+            </div>
+            <div class="form-section">
+                <form action="">
+                    <input class="form-control" type="text" placeholder="Your name" readonly>
+                    <input class="form-control" type="text" placeholder="Your name" readonly>
+                    <input class="form-control" type="text" placeholder="Your name" readonly>
+                    <textarea class="form-control" placeholder="comment" id="exampleFormControlTextarea1"
+                        rows="5"></textarea>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Notify me of new posts by email.
+                        </label>
+                    </div>
+                    <div class="formButton-section">
+                        <button>LEAVE COMMENT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-section">
+                <form action="">
+                    <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"
+                        placeholder="Type here">
+                </form>
+            </div>
+            <div class="topPostSection">
+                <h1>Top Posts</h1>
+                <div class="post-section" *ngFor="let item of topPosts">
+                    <img src="{{item.image}}" width="50px" height="50px" alt="">
+                    <a href="#">
+                        <h4>{{item.title}}</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="resentPost-section">
+                <h1>Resent Post</h1>
+                <div class="resent-post-section" *ngFor="let resentPostItem of resentPost">
+                    <a href="#">
+                        <h4>{{resentPostItem.title}}</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="resentPost-section">
+                <h1>Categories</h1>
+                <div class="resent-post-section" *ngFor="let resentPostItem of resentPost">
+                    <a href="#">
+                        <h4>{{resentPostItem.title}}</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="footer-section">
+            <h1 class="col-md-8">Theme by Colorlib Powered by WordPress</h1>
+            <div class="col-md-4 socialMedia-icons">
+                <p><mat-icon>facebook</mat-icon></p>
+                <p><mat-icon>Google</mat-icon></p>
+                <p><mat-icon>linkedin-box</mat-icon></p>
+                <p><mat-icon>subscriptions</mat-icon></p>
+                <p><mat-icon>facebook</mat-icon></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video">
+
+    <iframe src="https://player.vimeo.com/video/253989945?h=c6db007fe5&color=ef0800&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/253989945">Sample Video</a> from <a href="https://vimeo.com/testbusiness">Vimeo Test User Business</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</div>

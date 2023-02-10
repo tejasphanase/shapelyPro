@@ -1,0 +1,261 @@
+
+.main{
+    background-image: url("https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+// @media screen and (max-width:688px) {
+     
+//     .main{
+//         background-size: 200vh 200vw;
+//     }
+// }
+.head-text-section{
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    color: white;
+    // margin-top: 50px;
+}
+.head-text-section h1{
+     
+    font-size: 60px;
+   
+}
+// .bolder-text{
+//     font-size: 100px;
+//     font-weight: bolder;
+// }
+.seo-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fff; 
+}
+.button-section button{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    border: none;
+}
+.button-section button:hover{
+     opacity: 0.8;
+}
+.seo-text{
+    display: block;
+    justify-content: center;
+    align-items: center; 
+    margin: 100px; 
+}
+.seo-text p{
+    line-height: 30px;
+}
+.image img {
+      height: 500px;
+      width: 800px;
+}
+.seo-text button{
+    width: 150px;
+    padding: 10px;
+    border: none;
+    outline: 2px solid #745cf9;
+    color: white;
+    background-color: #745cf9;
+}
+.seo-text button:hover{
+   opacity: 0.8;
+}
+.portfolio-section{ 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: #f5f5f5;
+}
+.portfolio-image img{
+    height: 500px;
+    width: 800px;
+}
+.portfolio-text-section{ 
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 50%;
+    margin: 100px;
+}
+.portfolio-text-section button{
+    width: 200PX;
+    color: #fff;
+    padding: 10px;
+    background-color: #745cf9;
+    outline: 2PX solid #745cf9;
+    border: none;
+}
+.portfolio-text-section button:hover{
+    opacity: 0.8;
+}
+.small-parallax-section{
+    background-image: url("https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/12/photo-1452723312111-3a7d0db0e024.jpg");  
+    background-repeat: no-repeat;
+    background-size: 100% 400vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+.small-parallax-text-section{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    margin: 100px;
+    padding: 80px;
+}
+.small-parallax-text-section h1{
+    font-size: 70px;
+    margin-left: 30px;
+}
+.small-parallax-text-section button{
+   width: 200px;
+   padding: 10px;
+   color: #fff;
+   background-color: #745cf9;
+   border: none;
+   outline: 2px solid #745cf9;
+}
+.small-parallax-text-section button:hover{
+   opacity: 0.8;
+ }
+.Limitless-Options-section{
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.limitless-options-text-section{
+       width: 50%;
+       margin: 50px;
+       padding: 20px;
+}
+.limitless-options-text-section button{
+    background-color:#745cf9;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    color:#fff;
+    margin-left: 40%;
+}
+.limitless-options-text-section button:hover{
+  opacity: 0.8;
+}
+.limitless-options-text-section h1{
+    margin-left: 30%;
+}
+.ourlatest-project-section{
+    background: #0e1015;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+.text-section{
+    margin: 0 30%;
+    color: white;
+    align-items: center;
+    padding: 100px;
+}
+.customer-say-section{
+    background-image: url('https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/12/photo-1451417379553-15d8e8f49cde.jpg');
+    display: flex;
+    justify-content: center;
+}
+.customer-say-text-section{
+    width: 50%;
+    padding: 100px;
+    color: #fff;
+}
+.customer-say-text-section h1{
+    font-size: 40px;
+}
+.customer-say-text-section p{
+    font-size: 15px;
+}
+.like-question-section{
+    background: #f5f5f5;
+//    justify-content: space-between;
+//    align-items: center;
+}
+.like-text-section{
+    padding: 100px;
+    display: flex;
+    gap: 20px;
+    margin-left: 100px;
+}
+.like-text-section button{
+     width: 200px;
+     background-color: #745cf9;
+     outline: 2px solid #745cf9;
+     border: none;
+}
+.like-text-section button:hover{
+    opacity: 0.8;
+}
+.footer{
+    background:black;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    padding: 100px;
+}
+.footer-text{
+    color: white;   
+}
+.socialmedia-icon{
+    display: flex;
+    gap: 20px;
+    color: #fff;
+}
+.project-image-section h1{
+    display: none;
+    color: white;
+    position: relative;
+    bottom: 180px;
+    left: 60px;
+}
+.project-image-section img:hover{
+    opacity: 0.6;
+}
+.project-image-section:hover h1{
+    // background-color: red;
+    display: block;
+    animation-name:projectTitle;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+} 
+@keyframes projectTitle {
+    from{
+        bottom: 0px;
+        left: 60px;
+    }
+    to{
+        bottom:180px
+    }
+}
+.project-image-section h1{ 
+  font-size: 25px;
+  font-weight: 200;
+}
+
+
+
+
+
